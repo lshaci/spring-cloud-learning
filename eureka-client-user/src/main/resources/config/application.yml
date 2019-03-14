@@ -1,0 +1,20 @@
+# server
+server:
+  port: 8080
+# spring
+spring:
+  # application
+  application:
+    name: user
+# eureka
+eureka:
+  # eureka client
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+# log
+logging:
+  config: classpath:config/logback-spring.xml
+  level:
+    root: warn
+    com.lshaci: info

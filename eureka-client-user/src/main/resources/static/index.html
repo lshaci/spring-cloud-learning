@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Application</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <button id="jd">绝对路径</button>
+    <button id="xd">相对路径</button>
+</body>
+<script>
+    $('#jd').on('click', function() {
+        $.get("/user-center/getAllColleges", function() {
+
+        })
+    });
+    $('#xd').on('click', function() {
+        $.get("./getAllColleges", function() {
+
+        })
+    });
+</script>
+</html>
