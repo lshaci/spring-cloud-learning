@@ -8,6 +8,7 @@
 <body>
     <button id="jd">绝对路径</button>
     <button id="xd">相对路径</button>
+    <span id="s"></span>
 </body>
 <script>
     $('#jd').on('click', function() {
@@ -16,8 +17,9 @@
         })
     });
     $('#xd').on('click', function() {
-        $.get("./getAllColleges", function() {
-
+        $.get("./api/college/getAll", function(res) {
+            console.log(res)
+            $('#s').html(res)
         })
     });
 </script>
