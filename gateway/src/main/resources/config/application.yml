@@ -6,6 +6,15 @@ spring:
   # application
   application:
     name: gateway
+  # redis
+  redis:
+    host: localhost
+    database: 1
+    port: 6379
+    # jedis pool
+    jedis:
+      pool:
+        max-active: 8
   # spring cloud
   cloud:
     # spring cloud gateway

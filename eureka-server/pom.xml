@@ -8,6 +8,9 @@
     <artifactId>eureka-server</artifactId>
     <version>1.0.0</version>
 
+    <name>spring cloud eureka server</name>
+    <description>Spring cloud 注册中心</description>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

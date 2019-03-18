@@ -6,11 +6,22 @@
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
+    <button id="au">登录</button>
     <button id="jd">绝对路径</button>
     <button id="xd">相对路径</button>
     <span id="s"></span>
 </body>
 <script>
+    $.ajaxSetup({
+        headers: {
+            'authentication': 'md5'
+        }
+    });
+    $('#au').on('click', function() {
+        $.get('/api/authentication/login', res => {
+            window.localStorage.setItem('authentication', res);
+        })
+    });
     $('#jd').on('click', function() {
         $.get("/user-center/getAllColleges", function() {
 

@@ -8,6 +8,8 @@
     <artifactId>eureka-client-user</artifactId>
     <version>1.0.0</version>
 
+    <name>spring cloud eureka client</name>
+    <description>Spring cloud 微服务</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
